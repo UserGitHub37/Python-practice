@@ -13,8 +13,8 @@ print(multiline_text)
 
 
 # Разделение строки по пробелам
-text = "Hello World Python"
-words = text.split()
+text1 = "Hello World Python"
+words = text1.split()
 print(words)  # ['Hello', 'World', 'Python']
 
 # Разделение по запятой
@@ -24,11 +24,13 @@ print(fruits)  # ['apple', 'banana', 'cherry']
 
 
 # Приведение к верхнему и нижнему регистру
-text = "Hello World"
-print(text.upper())  # HELLO WORLD
-print(text.lower())  # hello world
+text2 = "Hello World"
+print(text2.upper())  # HELLO WORLD
+print(text2.lower())  # hello world
 
 # Удаление пробелов с начала и конца строки
-text = "   Hello World   "
-print(text.strip())  # Hello World
+text3 = "   Hello World   "
+print(text3.strip())  # Hello World
+
+print("Hello Andrey")
 

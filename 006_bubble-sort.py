@@ -1,6 +1,9 @@
 list_1 = [5, 2, 1, 6, 4, 9, 5, 4, 3, 8, 10, 7, 1, 3]
 list_2 = [1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 list_3 = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0]
+list_4 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+
+
 
 def sort_bubble(list):
     print(f"\n{list} Не отсортированный список")
@@ -11,7 +14,7 @@ def sort_bubble(list):
     change_counter = 0
 
     while j < list_length - 1:
-        listIs_changed = False
+        is_changed_list = False
         i = 0
         while i < list_length - 1:
             iteration_counter += 1
@@ -21,9 +24,9 @@ def sort_bubble(list):
                 change_counter += 1
                 list[i] = num_2
                 list[i + 1] = num_1
-                listIs_changed = True
+                is_changed_list = True
             i += 1
-        if listIs_changed == False:
+        if is_changed_list == False:
             break
         j += 1
 
@@ -34,3 +37,4 @@ def sort_bubble(list):
 sort_bubble(list_1)
 sort_bubble(list_2)
 sort_bubble(list_3)
+sort_bubble(list_4)
